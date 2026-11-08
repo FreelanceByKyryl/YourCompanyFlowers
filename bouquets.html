@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F5F8EF">
+  <meta name="description" content="Browse beautiful floral arrangements, roses, seasonal bouquets and wedding blooms.">
+  <title>Bouquets | YourCompanyName Flowers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body data-page="bouquets">
+  <header id="siteHeader"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">The flower edit / 01</p>
+        <h1>Find your perfect<br><em class="serif">bouquet.</em></h1>
+        <p>
+          From soft romantic tones to bold seasonal bouquets —
+          explore flowers thoughtfully chosen for every feeling.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="filter-bar" id="filterBar"
+           role="group" aria-label="Filter bouquets">
+        <button class="filter-btn" type="button"
+                data-filter="all" aria-pressed="true">All flowers</button>
+        <button class="filter-btn" type="button"
+                data-filter="romance" aria-pressed="false">Romantic</button>
+        <button class="filter-btn" type="button"
+                data-filter="seasonal" aria-pressed="false">Seasonal</button>
+        <button class="filter-btn" type="button"
+                data-filter="celebration" aria-pressed="false">Celebrations</button>
+        <button class="filter-btn" type="button"
+                data-filter="wedding" aria-pressed="false">Weddings</button>
+      </div>
+
+      <div id="bouquetGrid"></div>
+
+      <p class="info-note">
+        Bouquets shown are design examples. Prices and availability depend
+        on the florist. Choose a bouquet to send an enquiry.
+      </p>
+    </section>
+
+    <section class="bottom-cta">
+      <div class="container">
+        <div>
+          <p class="eyebrow light">Make it personal</p>
+          <h2>Something specially <span class="serif">for you.</span></h2>
+        </div>
+
+        <a href="contact.html" class="btn btn-white">
+          Ask about a custom bouquet ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+  <dialog id="flowerDialog" aria-label="Flower details"></dialog>
+</body>
+</html>

@@ -1,0 +1,214 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F5F8EF">
+  <meta name="description" content="Discover flowers for life's little and big moments. Interactive floral boutique concept.">
+  <title>Home | YourCompanyName Flowers</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body data-page="home">
+  <header id="siteHeader"></header>
+
+  <main id="main">
+    <section class="hero-main">
+      <div class="container hero-top">
+        <span class="pill">✳ Thoughtfully picked, beautifully arranged</span>
+
+        <h1>
+          <span class="line">Make Every Moment</span>
+          <span class="line">Bloom <em class="serif">Beautifully.</em></span>
+        </h1>
+
+        <p class="intro">
+          Flowers for big feelings, little joys, and all the moments in
+          between. Find the bouquet that says exactly what words can't.
+        </p>
+
+        <span class="hand-note note-left">//</span>
+        <span class="hand-note note-right">
+          Little moments,<br>big blooms!
+        </span>
+      </div>
+
+      <svg class="doodle" viewBox="0 0 1440 790"
+           preserveAspectRatio="none" aria-hidden="true">
+        <path class="draw-line"
+              d="M1260 200 C1340 280 1300 410 1200 472 M1218 459 L1197 474 L1220 481"/>
+        <path class="draw-line"
+              d="M470 730 Q520 710 552 675 M536 681 L553 672 L552 694"/>
+      </svg>
+
+      <div class="arc-band" id="arcBand"
+           aria-label="Drag or swipe to browse flower bouquets">
+        <div class="arc-desktop" id="arcDesktop"></div>
+        <div class="arc-mobile" id="arcMobile"></div>
+      </div>
+
+      <div class="hero-bottom">
+        <span class="hand-note note-bottom">Picked with love</span>
+
+        <div class="dashed-cta">
+          <a href="bouquets.html" class="btn btn-primary">
+            Explore bouquets ↗
+          </a>
+        </div>
+
+        <span class="hero-mini">↔ Drag to explore</span>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Flower shop specialties">
+      <div class="ticker-run" id="tickerRun">
+        <div class="ticker-group">
+          <span>Fresh bouquets</span><b>✳</b>
+          <span>Wedding flowers</span><b>✳</b>
+          <span>Roses & peonies</span><b>✳</b>
+          <span>Thoughtful gifts</span><b>✳</b>
+          <span>Seasonal blooms</span><b>✳</b>
+        </div>
+      </div>
+    </div>
+
+    <section class="section container">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">01 / Flower favourites</p>
+          <h2>Our most loved <em class="serif">blooms.</em></h2>
+        </div>
+
+        <p>
+          Handpicked arrangements to bring beauty, meaning
+          and a little extra joy to your day.
+        </p>
+      </div>
+
+      <div id="featuredGrid"></div>
+
+      <div class="section-actions">
+        <a href="bouquets.html" class="btn btn-outline">
+          See all bouquets ↗
+        </a>
+      </div>
+    </section>
+
+    <section class="editorial-section">
+      <div class="container editorial-layout">
+        <div class="editorial-copy reveal">
+          <p class="eyebrow">02 / An archive of petals</p>
+
+          <h2>
+            Every<br>
+            flower<br>
+            <em class="serif">has a story.</em>
+          </h2>
+
+          <p>
+            A moving collection of colour, texture and little details.
+            Inspired by the idea that every bouquet is its own piece of art.
+          </p>
+
+          <a href="story.html" class="btn btn-primary">
+            Discover our story ↗
+          </a>
+        </div>
+
+        <div class="mosaic" data-mosaic
+             aria-label="Moving mosaic of flower photos"></div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">03 / Made for your moments</p>
+          <h2>Flowers for <em class="serif">every occasion.</em></h2>
+        </div>
+
+        <p>
+          Some days call for a little gesture.
+          Others deserve a grand celebration. We love both.
+        </p>
+      </div>
+
+      <div class="occasion-grid">
+        <a class="occasion-card reveal"
+           href="bouquets.html?category=romance">
+          <img
+            src="https://images.unsplash.com/photo-1508615070457-7baeba4003ab?auto=format&fit=crop&w=800&h=900&q=78"
+            loading="lazy"
+            decoding="async"
+            alt="Roses for a romantic occasion"
+          >
+          <div class="occasion-copy">
+            <span class="eyebrow">01 / From the heart</span>
+            <h3>Love & romance</h3>
+            <p>Say it beautifully ↗</p>
+          </div>
+        </a>
+
+        <a class="occasion-card reveal"
+           href="bouquets.html?category=celebration">
+          <img
+            src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=800&h=900&q=78"
+            loading="lazy"
+            decoding="async"
+            alt="Colourful flowers for a celebration"
+          >
+          <div class="occasion-copy">
+            <span class="eyebrow">02 / Make their day</span>
+            <h3>Celebrations</h3>
+            <p>Find a joyful bouquet ↗</p>
+          </div>
+        </a>
+
+        <a class="occasion-card reveal"
+           href="bouquets.html?category=wedding">
+          <img
+            src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=800&h=900&q=78"
+            loading="lazy"
+            decoding="async"
+            alt="Wedding and event flowers"
+          >
+          <div class="occasion-copy">
+            <span class="eyebrow">03 / Forever moments</span>
+            <h3>Weddings</h3>
+            <p>Explore elegant flowers ↗</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="quote-strip">
+      <blockquote>
+        “A flower is a little way of saying something <em>big.</em>”
+      </blockquote>
+      <p>YourCompanyName · Designed to make moments bloom</p>
+    </section>
+
+    <section class="bottom-cta">
+      <div class="container">
+        <div>
+          <p class="eyebrow light">04 / Come say hello</p>
+          <h2>Beautiful moments start <span class="serif">here.</span></h2>
+        </div>
+
+        <a class="btn btn-white" href="visit.html">
+          Find our place ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+  <dialog id="flowerDialog" aria-label="Flower details"></dialog>
+</body>
+</html>
